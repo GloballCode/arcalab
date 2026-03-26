@@ -1,0 +1,196 @@
+body {
+  background: #f5f7fb;
+}
+
+/* LOGO ARCALAB */
+
+.logo {
+  width: 60px;
+  border-radius: 10px;
+}
+
+/* NAVBAR */
+.custom-navbar {
+  position: relative;
+  z-index: 10;
+  background: linear-gradient(135deg, rgb(8, 127, 148), rgb(30, 179, 171));
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, rgb(33, 138, 132), rgb(15, 128, 168));
+  color: white;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* partículas */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: moveBg 25s linear infinite;
+  pointer-events: none;
+}
+
+/* mudou nd 🤨 */
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 80px 80px;
+  animation: moveBgSlow 40s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes moveBg {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-200px, -200px);
+  }
+}
+
+@keyframes moveBgSlow {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100px, -100px);
+  }
+}
+
+/* CARDS */
+.card {
+  border-radius: 16px;
+  border: none;
+  height: 100%;
+}
+
+.card-lab {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-lab:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ICONES */
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #6a11cb;
+}
+
+/* MISSÃO */
+.mission-card {
+  max-width: 500px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+}
+
+.footer-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.author {
+  white-space: nowrap;
+}
+
+.bottom-link {
+  width: 30px;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 5px;
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bottom-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(201, 201, 201, 0.25);
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* PASSOS */
+.step {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.step:hover {
+  transform: translateX(5px);
+  background: #e6fffa;
+}
+
+/* NÚMERO DO PASSO (ficou mto dahoraaaa-) */
+.step-number {
+  background: #1eb3ab;
+  color: white;
+  border-radius: 50%;
+  padding: 6px 12px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* checkboxes bonitinhaas */
+.step-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.step-check {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* quando marcado */
+.step-check:checked+.step-number {
+  background: #22c55e;
+}
+
+/* novamente, resíduo do tsparticles bugado. tentei debuggar nn sei qnts vezes, mas nd :/
+
+#tsparticles {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1 !important;
+}
+
+
+  aceitando debugg!! */

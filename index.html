@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArcaLab</title>
+
+  <!-- Favicon (identificação) -->
+  <link rel="icon" type="image/jpeg" href="arcalab2.jpeg" />
+
+  <!-- Bootstrap (salva vidas haha) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="tsparticles"></div> <!-- div das particulas lindinhas. meio inútil, ma vai continuar aki -->
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="arcalab2.jpeg" alt="ArcaLab Logo" class="logo"></a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Experimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Atividades</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero text-center">
+    <div class="container">
+      <h1>ArcaLab</h1>
+      <p>Onde ideias viram descobertas.</p>
+      <a href="#missoes" class="btn btn-light btn-lg mt-3">
+        Começar Jornada 🚀
+      </a>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="container my-5 text-center">
+    <h2>Bem-vindo ao laboratório</h2>
+    <p class="text-muted">
+      Explore ciência de forma divertida com experimentos, criatividade e desafios reais.
+    </p>
+  </section>
+
+  <!-- CARDS -->
+  <section class="container mb-5">
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="card text-center p-3">
+          <i class="bi bi-flask icon"></i> <!-- Sabe qdo nd quer dar certo e no final dá? Esse icon. -->
+          <h5>Experimentos</h5>
+          <p>Aprenda ciência na prática com materiais simples.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card card-lab text-center p-3">
+          <i class="bi bi-palette icon"></i>
+          <h5>Criatividade</h5>
+          <p>Arte e ciência juntas em projetos incríveis.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card card-lab  text-center p-3">
+          <i class="bi bi-lightbulb icon"></i>
+          <h5>Ideias</h5>
+          <p>Desenvolva pensamento científico.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card card-lab  text-center p-3">
+          <i class="bi bi-gear icon"></i>
+          <h5>Atividades</h5>
+          <p>Desafios práticos para aprender fazendo.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MISSÃO -->
+  <section id="missoes" class="container text-center mb-5">
+    <h2>🧪 Missão da Semana</h2>
+
+    <div class="card p-4 mt-3 mission-card">
+      <h4>🌋 Vulcão de Bicarbonato</h4>
+      <p>Crie uma reação química explosiva usando ingredientes simples!</p>
+      <a class="btn btn-primary" href="desafio-semana.html">Começar Experimento</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center p-4">
+    <p class="footer-text">
+      © 2026 ArcaLab • Cientistas do Futuro - Desenvolvido por
+      <span class="author">
+        <a class="bottom-link" href="https://www.instagram.com/gaby.barrossa/">Gaby Barros</a>
+      </span>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <!-- bootstrap JS do tsparticles!! -->
+  <script src="script.js"></script>
+</body>
+
+</html>
