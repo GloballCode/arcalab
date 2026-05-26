@@ -5,7 +5,7 @@ Simple blog website
 This is a simple website in Brazilian Portuguese. Made with AI help, but still a WIP.
 
 ## ✨ Functionalities
-Weekly activities PDF
+Weekly activities (WIP)
 Posts from other students (WIP)
 
 ## 🛠 Technologies
