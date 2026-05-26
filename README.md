@@ -16,11 +16,6 @@ JavaScript (plain and simple XD)
 ## 🎯 Objective
 Create an blog webiste for ArcaLab, school's science club.
 
-## 🚀 Deploy
-(Sie deployed at GitHub Pages)
-
-## 📷 Screenshots
-
 ## Author's Note
 Howdy mates! Y'all may call me Globall 👋
 
